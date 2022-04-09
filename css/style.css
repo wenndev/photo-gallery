@@ -1,0 +1,231 @@
+* {
+  font-family: "Poppins";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #201f1f;
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  background-color: #363434;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2% 5%;
+}
+@media (max-width: 630px) {
+  .header {
+    padding: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.header-navbar ul, .header-social-media ul {
+  display: flex;
+  color: #ffffff;
+  list-style: none;
+}
+@media (max-width: 630px) {
+  .header-navbar ul, .header-social-media ul {
+    display: none;
+  }
+}
+.header-brand {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #f3570e;
+}
+.header-navbar li a, .header-social-media li a {
+  margin: 0 1rem;
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+.header-navbar li a:hover, .header-social-media li a:hover {
+  color: #d17723;
+  transition: 0.3s;
+}
+
+.gallery {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #ffffff;
+  padding-top: 5rem;
+}
+@media (max-width: 630px) {
+  .gallery {
+    flex-direction: column;
+  }
+}
+.gallery-card {
+  width: 30%;
+  height: 500px;
+  margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #ffffff;
+}
+@media (max-width: 630px) {
+  .gallery-card {
+    width: 90%;
+    margin-bottom: 5%;
+  }
+}
+.gallery-card-title {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.gallery-card-btn {
+  border: 2px solid #ffffff;
+  padding: 0.6rem 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+.gallery-card-btn:hover {
+  background-color: #f3570e;
+}
+.gallery #card-1 {
+  background-image: url("../img/animais.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(90%);
+  transition: 0.6s;
+}
+.gallery #card-1:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/animais.jpg);
+}
+.gallery #card-2 {
+  background-image: url("../img/arquitetura.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(90%);
+  transition: 0.6s;
+}
+.gallery #card-2:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/arquitetura.jpg);
+}
+.gallery #card-3 {
+  background-image: url("../img/cidade.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(90%);
+  transition: 0.6s;
+}
+.gallery #card-3:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/cidade.jpg);
+}
+.gallery #card-4 {
+  background-image: url("../img/decoracao.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(90%);
+  transition: 0.6s;
+}
+.gallery #card-4:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/decoracao.jpg);
+}
+.gallery #card-5 {
+  background-image: url("../img/esportes.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(90%);
+  transition: 0.6s;
+}
+.gallery #card-5:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/esportes.jpg);
+}
+.gallery #card-6 {
+  background-image: url("../img/natureza.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(90%);
+  transition: 0.6s;
+}
+.gallery #card-6:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/natureza.jpg);
+}
+.gallery #card-7 {
+  background-image: url("../img/paisagem.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(90%);
+  transition: 0.6s;
+}
+.gallery #card-7:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/paisagem.jpg);
+}
+.gallery #card-8 {
+  background-image: url("../img/pessoas.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(90%);
+  transition: 0.6s;
+}
+.gallery #card-8:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/pessoas.jpg);
+}
+.gallery #card-9 {
+  background-image: url("../img/refeicoes.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(90%);
+  transition: 0.6s;
+}
+.gallery #card-9:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/refeicoes.jpg);
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  color: #f3570e;
+  background-color: #363434;
+}
+
+/*# sourceMappingURL=style.css.map */
